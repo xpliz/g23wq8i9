@@ -5,10 +5,14 @@ updates:
     directory: "/"
     schedule:
       interval: "weekly"
-    open-pull-requests-limit: 10
+    commit-message:
+      include: scope
+      prefix: bump
 
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
       interval: "weekly"
-    open-pull-requests-limit: 10
+    commit-message:
+      include: scope
+      prefix: bump
