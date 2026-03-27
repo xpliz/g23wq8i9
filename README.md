@@ -1,36 +1,33 @@
 # ServletMirror Containerization
 
-## Requirements
-
-- [Docker](https://www.docker.com/) OR [Podman](https://podman.io/)
-- `curl` (for health checks and testing)
-
 ## Table of Contents
 
-- [About](#about)
-- [Requirements](#requirements)
-- [Quick Start](#quick-start)
-- [Building Images](#building-images)
-  - [Docker](#docker)
-  - [Podman](#podman)
-- [Running Containers](#running-containers)
-  - [Docker Run](#docker-run)
-  - [Podman Run](#podman-run)
-- [Docker Compose](#docker-compose)
-- [Podman Play Kube](#podman-play-kube)
-- [run.sh Script](#runsh-script)
-  - [Build](#build)
-  - [Run](#run)
-  - [Compose](#compose)
-  - [Kube](#kube)
-  - [Stop](#stop)
-  - [Logs](#logs)
-  - [Clean](#clean)
-- [Usage Examples](#usage-examples)
-- [Security Features](#security-features)
-- [Files Reference](#files-reference)
-- [Additional Scripts](#additional-scripts)
-  - [getip.sh](#getipsh)
+- [ServletMirror Containerization](#servletmirror-containerization)
+  - [Table of Contents](#table-of-contents)
+  - [About](#about)
+  - [Requirements](#requirements)
+  - [Quick Start](#quick-start)
+  - [Building Images](#building-images)
+    - [Docker](#docker)
+    - [Podman](#podman)
+  - [Running Containers](#running-containers)
+    - [Docker](#docker-1)
+    - [Podman](#podman-1)
+  - [Docker Compose](#docker-compose)
+  - [Podman Play Kube](#podman-play-kube)
+  - [Helper Script](#helper-script)
+    - [Build](#build)
+    - [Run](#run)
+    - [Compose](#compose)
+    - [Kube](#kube)
+    - [Stop](#stop)
+    - [Logs](#logs)
+    - [Clean](#clean)
+  - [Usage Examples](#usage-examples)
+  - [Security Features](#security-features)
+  - [Files Reference](#files-reference)
+  - [Additional Scripts](#additional-scripts)
+    - [getip.sh](#getipsh)
 
 ---
 
@@ -45,6 +42,13 @@
 - Supports both HTTP and HTTPS
 - Available endpoints: `/`, `/mirror/`, `/v1`, `/v1/secure`, `/show/v1`, `/monitor/v1`
 - Built with Java and Jetty
+
+---
+
+## Requirements
+
+- [docker](https://www.docker.com/) or [podman](https://podman.io/) with [podman-compose](https://github.com/containers/podman-compose)
+- `curl` (for health checks and testing)
 
 ---
 
